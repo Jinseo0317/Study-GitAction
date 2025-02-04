@@ -1,0 +1,11 @@
+name: gitaction Test
+
+on: [push, pull_request]
+
+job: 
+  test:
+    run: ubuntu-latest
+    step:
+      - uese: actions/checkuot@v1
+      - name : print
+      - run : cat action_test.txt

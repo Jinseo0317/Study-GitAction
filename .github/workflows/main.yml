@@ -2,7 +2,7 @@ name: gitaction Test
 
 on: [push, pull_request]
 
-job: 
+jobs: 
   test:
     run: ubuntu-latest
     step:
